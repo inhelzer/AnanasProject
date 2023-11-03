@@ -15,4 +15,9 @@ public class DH_end_level : MonoBehaviour
     {
         
     }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        FindObjectOfType<LevelLoader>().LoadNextScene();    
+    }
 }
